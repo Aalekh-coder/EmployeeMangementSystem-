@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+#tasklist::-webkit-scrollbar{
+    background-color: transparent;
+    height: 5px;
+}
+
+#tasklist::-webkit-scrollbar-thumb{
+ background-color: rgb(143,143,143);
+ border-radius: 50px;
+}
+
+ @keyframes rgb-border {
+            0% {
+                border-color: rgb(255, 0, 0); /* Red */
+            }
+            33% {
+                border-color: rgb(0, 255, 0); /* Green */
+            }
+            66% {
+                border-color: rgb(0, 0, 255); /* Blue */
+            }
+            100% {
+                border-color: rgb(255, 0, 0); /* Red */
+            }
+        }
+
+        .animate-rgb-border {
+            animation: rgb-border 3s infinite;
+        }
